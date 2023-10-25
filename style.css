@@ -1,0 +1,85 @@
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue : hsl(218, 23%, 16%);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@font-face {
+    font-family: "MyFont";
+    src: url(font/Manrope-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "MyFont";
+    background-color: var(--DarkBlue);
+}
+
+#frame{
+    padding: 30px 0 10px 0;
+    width: 50%;
+    margin: 10% auto;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 0.5em;
+    text-align: center;
+    position: relative;
+
+}
+h3{
+    color: var(--NeonGreen);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+h4{
+    width: 90%;
+    font-size: 28px;
+    margin: 10px auto;
+    color: var(--LightCyan);
+}
+
+#divider{
+    width: 90%;
+    margin:20px auto 50px auto;
+}
+
+#adviceChanger{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--NeonGreen);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+#adviceChanger:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 40px var(--NeonGreen);
+}
+
+
+@media screen and (max-width: 650px) {
+    #frame{
+        width: 80%;
+        margin-top: 60%;
+    }
+    
+}
